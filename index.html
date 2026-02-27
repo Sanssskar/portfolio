@@ -5,6 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanskar Shrestha · fluid portfolio</title>
+    <meta name="title" content="Sanskar Shrestha - Laravel & Filament Developer | Modern Web Portfolio">
+    <meta name="description"
+        content="I'm Sanskar Shrestha, a Laravel & Filament developer building scalable, user-centric web apps. Explore live projects, tech stack, and clean code philosophy.">
+    <meta name="keywords"
+        content="Sanskar Shrestha, Laravel developer Nepal, Filament PHP expert, backend developer, full-stack developer, web developer portfolio, PHP Laravel, JavaScript, MySQL, API development, ecommerce developer, LMS developer, Marimo developer">
+    <meta name="author" content="Sanskar Shrestha">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="3 days">
+    <meta name="language" content="English">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Canonical URL (avoid duplicate content) -->
+    <link rel="canonical" href="https://sanskarshrestha.com.np">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp (Rich previews) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sanskarshrestha.com.np">
+    <meta property="og:site_name" content="Sanskar Shrestha · Dev Portfolio">
+    <meta property="og:title" content="Sanskar Shrestha - Laravel & Filament Developer">
+    <meta property="og:description"
+        content="Build robust web applications with Laravel & Filament. I turn ideas into scalable, modern solutions.">
+    <meta property="og:image"
+        content="https://via.placeholder.com/1200x630/0a0c0f/a379c9?text=Sanskar+Shrestha+Portfolio">
+    <!-- Replace with actual OG image -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sanskar Shrestha - Laravel Developer Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@sanssskar"> <!-- Replace with actual handle -->
+    <meta name="twitter:creator" content="@sanssskar">
+    <meta name="twitter:title" content="Sanskar Shrestha - Laravel & Filament Developer">
+    <meta name="twitter:description" content="Modern web apps with Laravel & Filament. Check out my work and connect.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/0a0c0f/a379c9?text=Sanskar+Dev">
+
+    <!-- Geo Tags (for local SEO - Nepal/Kathmandu) -->
+    <meta name="geo.region" content="NP">
+    <meta name="geo.placename" content="Kathmandu">
+    <meta name="geo.position" content="27.7172;85.3240">
+    <meta name="ICBM" content="27.7172, 85.3240">
+
+    <!-- Verification for search consoles (add your codes) -->
+    <meta name="google-site-verification" content="your-google-verification-code">
+    <meta name="msvalidate.01" content="your-bing-verification-code">
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Fonts -->
@@ -14,6 +62,19 @@
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <style>
+        /* SR-Only class for hidden H1 (visible to search engines only) */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -108,9 +169,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
-            /* Reduced from 1.5rem */
-            margin-bottom: 2rem;
-            /* Reduced from 4rem */
+            margin-bottom: 1.5rem; /* Reduced from 2rem */
             position: relative;
         }
 
@@ -212,8 +271,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 4rem;
-            margin: 2rem 0 6rem;
-            /* Reduced from 4rem 0 8rem */
+            margin: 1.5rem 0 4rem; /* Reduced from 2rem 0 6rem */
             flex-wrap: wrap;
         }
 
@@ -222,22 +280,21 @@
             min-width: 350px;
         }
 
-        /* Advanced Name Animation */
+        /* Advanced Name Animation - SMALLER TEXT */
         .name-wrapper {
-            margin-bottom: 1.5rem;
-            /* Reduced from 2rem */
+            margin-bottom: 1rem; /* Reduced from 1.5rem */
         }
 
         .name-title {
-            font-size: 5.5rem;
+            font-size: 4.5rem; /* Reduced from 5.5rem */
             font-weight: 700;
             line-height: 1;
             letter-spacing: -0.03em;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem; /* Reduced from 0.5rem */
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.5rem; /* Reduced from 0.8rem */
         }
 
         /* 3D Flip Container */
@@ -275,7 +332,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            font-size: 5.5rem;
+            font-size: 4.5rem; /* Reduced from 5.5rem */
             font-weight: 700;
             white-space: nowrap;
         }
@@ -297,7 +354,7 @@
         }
 
         .typing-text {
-            font-size: 5.5rem;
+            font-size: 4.5rem; /* Reduced from 5.5rem */
             font-weight: 700;
             background: linear-gradient(90deg, var(--accent-1), var(--accent-2), var(--accent-3));
             -webkit-background-clip: text;
@@ -317,11 +374,11 @@
         .morph-container {
             display: inline-block;
             position: relative;
-            height: 6rem;
+            height: 5rem; /* Reduced from 6rem */
         }
 
         .morph-text {
-            font-size: 5.5rem;
+            font-size: 4.5rem; /* Reduced from 5.5rem */
             font-weight: 700;
             background: var(--gradient-1);
             -webkit-background-clip: text;
@@ -332,45 +389,43 @@
         }
 
         .name-small {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Reduced from 2.5rem */
             font-weight: 300;
             color: var(--text-tertiary);
             font-family: 'Outfit', sans-serif;
-            margin-left: 0.5rem;
+            margin-left: 0.3rem; /* Reduced from 0.5rem */
         }
 
         .badge-container {
             display: flex;
-            gap: 1rem;
-            margin: 1.5rem 0;
-            /* Reduced from 2rem */
+            gap: 0.8rem; /* Reduced from 1rem */
+            margin: 1rem 0; /* Reduced from 1.5rem 0 */
             flex-wrap: wrap;
         }
 
         .badge {
             background: var(--bg-secondary);
-            padding: 0.5rem 1.2rem;
+            padding: 0.4rem 1rem; /* Reduced from 0.5rem 1.2rem */
             border-radius: 50px;
-            font-size: 0.9rem;
+            font-size: 0.85rem; /* Reduced from 0.9rem */
             font-weight: 500;
             border: 1px solid var(--border-medium);
             color: var(--text-secondary);
         }
 
         .hero-tagline {
-            font-size: 1.8rem;
+            font-size: 1.5rem; /* Reduced from 1.8rem */
             color: var(--text-secondary);
-            margin: 1rem 0;
-            /* Reduced from 1.5rem */
+            margin: 0.8rem 0; /* Reduced from 1rem 0 */
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem; /* Reduced from 1rem */
             flex-wrap: wrap;
         }
 
         .animated-icon {
-            width: 50px;
-            height: 50px;
+            width: 40px; /* Reduced from 50px */
+            height: 40px; /* Reduced from 50px */
             border-radius: 50%;
             background: var(--gradient-1);
             display: flex;
@@ -392,29 +447,28 @@
         }
 
         .hero-desc {
-            font-size: 1.2rem;
+            font-size: 1.1rem; /* Reduced from 1.2rem */
             color: var(--text-secondary);
             max-width: 600px;
-            margin-bottom: 2rem;
-            /* Reduced from 2.5rem */
-            line-height: 1.8;
+            margin-bottom: 1.5rem; /* Reduced from 2rem */
+            line-height: 1.7; /* Slightly reduced from 1.8 */
         }
 
         .btn-group {
             display: flex;
-            gap: 1.5rem;
+            gap: 1.2rem; /* Reduced from 1.5rem */
             flex-wrap: wrap;
         }
 
         .btn {
-            padding: 1rem 2.5rem;
+            padding: 0.8rem 2rem; /* Reduced from 1rem 2.5rem */
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.4s;
             display: inline-flex;
             align-items: center;
-            gap: 0.8rem;
+            gap: 0.6rem; /* Reduced from 0.8rem */
             position: relative;
             overflow: hidden;
             border: none;
@@ -549,8 +603,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
-            margin: 6rem 0;
-            padding: 3rem;
+            margin: 4rem 0; /* Reduced from 6rem 0 */
+            padding: 2.5rem; /* Reduced from 3rem */
             background: var(--bg-secondary);
             border-radius: 2rem;
             border: 1px solid var(--border-medium);
@@ -561,7 +615,7 @@
         }
 
         .stat-number {
-            font-size: 3.5rem;
+            font-size: 3rem; /* Reduced from 3.5rem */
             font-weight: 700;
             background: var(--gradient-1);
             -webkit-background-clip: text;
@@ -574,17 +628,17 @@
             color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
+            font-size: 0.8rem; /* Reduced from 0.9rem */
+            margin-top: 0.4rem; /* Reduced from 0.5rem */
         }
 
         /* Projects Grid */
         .section-title {
-            font-size: 3rem;
-            margin-bottom: 3rem;
+            font-size: 2.5rem; /* Reduced from 3rem */
+            margin-bottom: 2rem; /* Reduced from 3rem */
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem; /* Reduced from 1rem */
         }
 
         .section-title i {
@@ -597,14 +651,14 @@
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
+            gap: 1.5rem; /* Reduced from 2rem */
+            margin: 2rem 0; /* Reduced from 3rem 0 */
         }
 
         .project-card {
             background: var(--bg-secondary);
-            border-radius: 2rem;
-            padding: 2.5rem;
+            border-radius: 1.5rem; /* Reduced from 2rem */
+            padding: 2rem; /* Reduced from 2.5rem */
             border: 1px solid var(--border-medium);
             transition: all 0.4s;
             position: relative;
@@ -633,8 +687,8 @@
         }
 
         .project-icon {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 2.5rem; /* Reduced from 3rem */
+            margin-bottom: 1rem; /* Reduced from 1.5rem */
             background: var(--gradient-1);
             -webkit-background-clip: text;
             background-clip: text;
@@ -642,28 +696,28 @@
         }
 
         .project-card h3 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.5rem; /* Reduced from 2rem */
+            margin-bottom: 0.4rem; /* Reduced from 0.5rem */
         }
 
         .project-meta {
             color: var(--text-tertiary);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
+            font-size: 0.8rem; /* Reduced from 0.9rem */
+            margin-bottom: 0.8rem; /* Reduced from 1rem */
         }
 
         .project-tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1.5rem;
+            gap: 0.4rem; /* Reduced from 0.5rem */
+            margin-top: 1rem; /* Reduced from 1.5rem */
         }
 
         .project-tag {
             background: var(--bg-primary);
-            padding: 0.3rem 1rem;
+            padding: 0.2rem 0.8rem; /* Reduced from 0.3rem 1rem */
             border-radius: 50px;
-            font-size: 0.8rem;
+            font-size: 0.7rem; /* Reduced from 0.8rem */
             color: var(--text-secondary);
         }
 
@@ -671,12 +725,12 @@
         .skills-cloud {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
-            margin: 3rem 0;
+            gap: 0.8rem; /* Reduced from 1rem */
+            margin: 2rem 0; /* Reduced from 3rem 0 */
         }
 
         .skill-bubble {
-            padding: 0.8rem 1.8rem;
+            padding: 0.5rem 1.2rem; /* Reduced from 0.8rem 1.8rem */
             border-radius: 50px;
             background: var(--bg-secondary);
             border: 1px solid var(--border-medium);
@@ -684,6 +738,7 @@
             font-weight: 500;
             transition: all 0.3s;
             cursor: default;
+            font-size: 0.9rem; /* Added */
         }
 
         .skill-bubble:hover {
@@ -696,24 +751,25 @@
         .contact-section {
             display: flex;
             flex-wrap: wrap;
-            gap: 2rem;
+            gap: 1.5rem; /* Reduced from 2rem */
             justify-content: center;
-            margin: 5rem 0;
+            margin: 3rem 0; /* Reduced from 5rem 0 */
         }
 
         .contact-card {
             background: var(--bg-secondary);
             border: 1px solid var(--border-medium);
-            border-radius: 1.5rem;
-            padding: 1.5rem 2.5rem;
+            border-radius: 1.2rem; /* Reduced from 1.5rem */
+            padding: 1rem 1.8rem; /* Reduced from 1.5rem 2.5rem */
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 0.8rem; /* Reduced from 1rem */
             text-decoration: none;
             color: var(--text-primary);
             transition: all 0.3s;
             position: relative;
             overflow: hidden;
+            font-size: 0.9rem; /* Added */
         }
 
         .contact-card::before {
@@ -736,7 +792,7 @@
         }
 
         .contact-card i {
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Reduced from 1.5rem */
             color: var(--accent-1);
             position: relative;
             z-index: 1;
@@ -750,14 +806,14 @@
         /* Footer */
         .footer {
             border-top: 1px solid var(--border-medium);
-            padding: 2rem 0;
-            margin-top: 4rem;
-            /* Reduced from 5rem */
+            padding: 1.5rem 0; /* Reduced from 2rem 0 */
+            margin-top: 3rem; /* Reduced from 4rem */
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 1rem;
             color: var(--text-tertiary);
+            font-size: 0.9rem; /* Added */
         }
 
         /* Responsive */
@@ -767,18 +823,18 @@
             }
 
             .name-title {
-                font-size: 3rem;
+                font-size: 2.5rem; /* Adjusted from 3rem */
             }
 
             .flip-front,
             .flip-back,
             .typing-text,
             .morph-text {
-                font-size: 3rem;
+                font-size: 2.5rem; /* Adjusted from 3rem */
             }
 
             .name-small {
-                font-size: 1.5rem;
+                font-size: 1.2rem; /* Adjusted from 1.5rem */
             }
 
             .hero-visual {
@@ -806,6 +862,9 @@
 </head>
 
 <body>
+    <!-- Hidden H1 for SEO (visible to search engines only) -->
+    <h1 class="sr-only">Sanskar Shrestha - Laravel & Filament Developer from Kathmandu, Nepal</h1>
+
     <!-- Custom Cursor -->
     <div class="cursor" id="cursor"></div>
     <div class="cursor-follower" id="cursorFollower"></div>
@@ -836,9 +895,9 @@
         <div class="hero">
             <div class="hero-content">
                 <div class="badge-container">
-                    <span class="badge">Laravel </span>
-                    <span class="badge">Filament </span>
-                    <span class="badge">APIs</span>
+                    <span class="skill-bubble">Laravel </span>
+                    <span class="skill-bubble">Filament </span>
+                    <span class="skill-bubble">APIs</span>
                 </div>
 
                 <!-- Animation Style 1: 3D Flip (Click to flip) -->
@@ -855,7 +914,7 @@
                 </div>
 
                 <!-- Animation Style 2: Typing Effect (Auto) -->
-                <div class="name-wrapper" style="margin-top: 1rem;">
+                <div class="name-wrapper" style="margin-top: 0.5rem;"> <!-- Reduced from 1rem -->
                     <div class="name-title">
                         <div class="typing-container">
                             <span class="typing-text" id="typingName">Sanskar</span>
@@ -865,7 +924,7 @@
                 </div>
 
                 <!-- Animation Style 3: Morphing Text (Auto) -->
-                <div class="name-wrapper" style="margin-top: 1rem;">
+                <div class="name-wrapper" style="margin-top: 0.5rem;"> <!-- Reduced from 1rem -->
                     <div class="name-title">
                         <div class="morph-container">
                             <span class="morph-text" id="morphName">Sanskar</span>
@@ -1051,13 +1110,13 @@
             Your browser does not support the audio element.
         </audio>
 
-        <!-- Music Control Button (so users can mute if they want) -->
+        <!-- Music Control Button - NO AUTOPLAY -->
         <div
             style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: var(--accent-1); border-radius: 50px; padding: 0.5rem; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
             <button onclick="toggleMusic()"
                 style="background: white; color: var(--accent-1); border: none; border-radius: 50px; padding: 0.8rem 1.5rem; cursor: pointer; display: flex; align-items: center; gap: 0.8rem; font-weight: 600;">
-                <i class="fa-solid fa-volume-high" id="music-icon"></i>
-                <span id="music-text">Mute</span>
+                <i class="fa-solid fa-play" id="music-icon"></i>
+                <span id="music-text">Play</span>
             </button>
         </div>
 
@@ -1068,48 +1127,27 @@
     </div>
 
     <script>
-        // Force autoplay with user interaction fallback
+        // Music toggle - NO AUTOPLAY
         const bgMusic = document.getElementById('bg-music');
         const musicIcon = document.getElementById('music-icon');
         const musicText = document.getElementById('music-text');
-        let isPlaying = true;
-
-        // Try to autoplay
-        bgMusic.play().catch(error => {
-            console.log("Autoplay prevented by browser. User must interact first.");
-            isPlaying = false;
-            musicIcon.classList.remove('fa-volume-high');
-            musicIcon.classList.add('fa-volume-off');
-            musicText.textContent = 'Play';
-        });
+        let isPlaying = false;
 
         function toggleMusic() {
             if (isPlaying) {
                 bgMusic.pause();
-                musicIcon.classList.remove('fa-volume-high');
-                musicIcon.classList.add('fa-volume-off');
+                musicIcon.classList.remove('fa-pause');
+                musicIcon.classList.add('fa-play');
                 musicText.textContent = 'Play';
             } else {
                 bgMusic.play();
-                musicIcon.classList.remove('fa-volume-off');
-                musicIcon.classList.add('fa-volume-high');
-                musicText.textContent = 'Mute';
+                musicIcon.classList.remove('fa-play');
+                musicIcon.classList.add('fa-pause');
+                musicText.textContent = 'Pause';
             }
             isPlaying = !isPlaying;
         }
 
-        // Optional: Try to play when user first interacts with the page
-        document.addEventListener('click', function playOnFirstClick() {
-            if (!isPlaying) {
-                bgMusic.play().then(() => {
-                    isPlaying = true;
-                    musicIcon.classList.remove('fa-volume-off');
-                    musicIcon.classList.add('fa-volume-high');
-                    musicText.textContent = 'Mute';
-                }).catch(() => { });
-            }
-            document.removeEventListener('click', playOnFirstClick);
-        }, { once: true });
         // Custom Cursor
         const cursor = document.getElementById('cursor');
         const cursorFollower = document.getElementById('cursorFollower');
@@ -1240,10 +1278,12 @@
                 // Switch to image 2
                 image1.classList.remove('active-image');
                 image2.classList.add('active-image');
+                imageCounter.textContent = '2/2';
             } else {
                 // Switch to image 1
                 image2.classList.remove('active-image');
                 image1.classList.add('active-image');
+                imageCounter.textContent = '1/2';
             }
             isImage1Active = !isImage1Active;
         }
@@ -1276,7 +1316,7 @@
                 e.preventDefault();
                 return false;
             }
-            
+
             // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
             if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'u')) {
                 e.preventDefault();
