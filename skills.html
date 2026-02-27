@@ -15,6 +15,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* Prevent text selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         /* Light Mode */
@@ -708,6 +713,67 @@
         if (savedTheme === 'dark') {
             body.classList.add('dark-mode');
         }
+
+        // Disable right click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable copy/paste shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Disable Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+A, Ctrl+S, Ctrl+P
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v' || e.key === 'a' || e.key === 's' || e.key === 'p')) {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'u')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Disable drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable copy event
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable cut event
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable paste event
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Add a watermark overlay that doesn't interfere with clicks
+        const watermark = document.createElement('div');
+        watermark.innerHTML = '© Sanskar Shrestha';
+        watermark.style.cssText = `
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.3;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            pointer-events: none;
+            z-index: 9999;
+            transform: rotate(-15deg);
+        `;
+        document.body.appendChild(watermark);
     </script>
 </body>
 </html>

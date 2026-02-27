@@ -18,6 +18,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            /* Prevent text selection */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
 
         /* Light Mode */
@@ -102,8 +107,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5rem 0;
-            margin-bottom: 4rem;
+            padding: 1rem 0;
+            /* Reduced from 1.5rem */
+            margin-bottom: 2rem;
+            /* Reduced from 4rem */
             position: relative;
         }
 
@@ -205,7 +212,8 @@
             align-items: center;
             justify-content: space-between;
             gap: 4rem;
-            margin: 4rem 0 8rem;
+            margin: 2rem 0 6rem;
+            /* Reduced from 4rem 0 8rem */
             flex-wrap: wrap;
         }
 
@@ -216,7 +224,8 @@
 
         /* Advanced Name Animation */
         .name-wrapper {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
+            /* Reduced from 2rem */
         }
 
         .name-title {
@@ -333,7 +342,8 @@
         .badge-container {
             display: flex;
             gap: 1rem;
-            margin: 2rem 0;
+            margin: 1.5rem 0;
+            /* Reduced from 2rem */
             flex-wrap: wrap;
         }
 
@@ -350,7 +360,8 @@
         .hero-tagline {
             font-size: 1.8rem;
             color: var(--text-secondary);
-            margin: 1.5rem 0;
+            margin: 1rem 0;
+            /* Reduced from 1.5rem */
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -384,7 +395,8 @@
             font-size: 1.2rem;
             color: var(--text-secondary);
             max-width: 600px;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
+            /* Reduced from 2.5rem */
             line-height: 1.8;
         }
 
@@ -739,7 +751,8 @@
         .footer {
             border-top: 1px solid var(--border-medium);
             padding: 2rem 0;
-            margin-top: 5rem;
+            margin-top: 4rem;
+            /* Reduced from 5rem */
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -810,8 +823,7 @@
                 </div> -->
                 <div class="control-group">
                     <button class="glass-btn" id="langToggle">
-                        <i class="fa-solid fa-language"></i>
-                        <span id="langText">EN</span>
+                        <span id="langText">💜</span>
                     </button>
                     <button class="glass-btn" id="themeToggle">
                         <i class="fa-regular fa-moon" id="themeIcon"> </i>
@@ -843,7 +855,7 @@
                 </div>
 
                 <!-- Animation Style 2: Typing Effect (Auto) -->
-                <div class="name-wrapper" style="margin-top: 2rem;">
+                <div class="name-wrapper" style="margin-top: 1rem;">
                     <div class="name-title">
                         <div class="typing-container">
                             <span class="typing-text" id="typingName">Sanskar</span>
@@ -853,7 +865,7 @@
                 </div>
 
                 <!-- Animation Style 3: Morphing Text (Auto) -->
-                <div class="name-wrapper" style="margin-top: 2rem;">
+                <div class="name-wrapper" style="margin-top: 1rem;">
                     <div class="name-title">
                         <div class="morph-container">
                             <span class="morph-text" id="morphName">Sanskar</span>
@@ -864,7 +876,7 @@
 
                 <div class="hero-tagline">
                     <div class="animated-icon">
-                        <i class="fa-regular fa-code"></i>
+                        <i class="fa-solid fa-code"></i>
                     </div>
                     <span>Code with purpose. Design with passion</span>
                 </div>
@@ -879,7 +891,7 @@
                         <i class="fa-regular fa-eye"></i> View Portfolio
                     </a>
                     <a href="https://wa.me/9779814351861" target="_blank" class="btn btn-outline">
-                        <i class="fa-solid fa-paper-plane"></i> Let's Talk
+                        <i class="fa-brands fa-whatsapp fa-2x"></i> Let's Talk
                     </a>
                 </div>
             </div>
@@ -1034,7 +1046,7 @@
                 <span>Sanskar (Marimo)</span>
             </a>
         </div>
-        <audio id="bg-music" loop autoplay style="display: none;">
+        <audio id="bg-music" loop style="display: none;">
             <source src="music.mpeg" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -1143,9 +1155,9 @@
 
             // Update button text based on flip state
             if (flipName.classList.contains('flip')) {
-                langText.textContent = 'नेपाली';
+                langText.textContent = '💚';
             } else {
-                langText.textContent = 'EN';
+                langText.textContent = '💜';
             }
         }
 
@@ -1228,12 +1240,10 @@
                 // Switch to image 2
                 image1.classList.remove('active-image');
                 image2.classList.add('active-image');
-                imageCounter.textContent = '2/2';
             } else {
                 // Switch to image 1
                 image2.classList.remove('active-image');
                 image1.classList.add('active-image');
-                imageCounter.textContent = '1/2';
             }
             isImage1Active = !isImage1Active;
         }
@@ -1252,6 +1262,67 @@
                 cursorFollower.style.height = '30px';
             });
         });
+
+        // Disable right click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable copy/paste shortcuts
+        document.addEventListener('keydown', function (e) {
+            // Disable Ctrl+C, Ctrl+X, Ctrl+V, Ctrl+A, Ctrl+S, Ctrl+P
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v' || e.key === 'a' || e.key === 's' || e.key === 'p')) {
+                e.preventDefault();
+                return false;
+            }
+            
+            // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || (e.ctrlKey && e.key === 'u')) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Disable drag and drop
+        document.addEventListener('dragstart', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable copy event
+        document.addEventListener('copy', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable cut event
+        document.addEventListener('cut', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable paste event
+        document.addEventListener('paste', function (e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Add a watermark overlay
+        const watermark = document.createElement('div');
+        watermark.innerHTML = '© Sanskar Shrestha';
+        watermark.style.cssText = `
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            opacity: 0.3;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            pointer-events: none;
+            z-index: 9999;
+            transform: rotate(-5deg);
+        `;
+        document.body.appendChild(watermark);
     </script>
 </body>
 
